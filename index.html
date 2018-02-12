@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Business Homepage</title>
+    <meta charset="UTF-8">
+    <title>Bootstrap 3.0 Grid System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
+    <style>
+      .col-xs-12{
+        height:100px;
+        background-color: green;
+        color: white;
+        text-align: center;
+      }
+      .col-sm-12{
+        height:100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      }
+      .col-lg-6{
+        height:100px;
+        background-color: yellow;
+        color: black;
+        text-align: center;
+        border: 1px solid black;
+      }
+      .col-md-6{
+        height:100px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        border: 1px solid black;
+      }
+      .footer .col-xs-12{
+        height:100px;
+        background-color: gray;
+        color: black;
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-inverse">
@@ -26,40 +62,53 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-
-      <h1>Great experiences to buy our product:</h1>
+    <div class="container-fluid">
 
       <div class="row">
-        <div class="col-sm-3 col-md-6 col-lg-4">The Flavor</div>
-        <div class="col-sm-9 col-md-6 col-lg-8">The Effects</div>
+
+        <div class="col-xs-12">Great experiences to buy our product:</div>
+
       </div>
+
       <div class="row">
-        <div class="col-sm-3 col-md-6 col-lg-4">
-          <ul>
-            <li>sausage</li>
-            <li>curry</li>
-            <li>spice</li>
-            <li>garlic</li>
-            <li>soda</li>
-            <li>soy milk</li>
-            <li>cough syrup</li>
-          </ul>
+
+        <div class="col-lg-6">
+          The Flavor
         </div>
-        <div class="col-sm-9 col-md-6 col-lg-8">
+        <div class="col-md-6">
           <ul>
             <li>full</li>
             <li>energetic</li>
             <li>awake</li>
-            <li>asleep</li>
-            <li>happy</li>
-            <li>stronger</li>
             <li>excited</li>
           </ul>
         </div>
+
       </div>
-      <img src="1032665_stock-photo-gummy-bears.jpg" class="img-thumbnail" alt="Candy">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            The Effects
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>sausage</li>
+              <li>curry</li>
+              <li>spice</li>
+              <li>cough syrup</li>
+            </ul>
+          </div>
+
+        <div class="row footer">
+
+          <div class="col-xs-12">
+          </div>
+
+        </div>
+          <img src="1032665_stock-photo-gummy-bears.jpg" class="img-thumbnail" alt="Candy">
+        </div>
     </div>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
